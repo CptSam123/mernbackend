@@ -12,8 +12,11 @@ app.use(express.json());
 
 // Update the CORS options here
 const corsOptions = {
-  origin:  process.env.frontendurl, // Set your frontend origin URL
-  credentials: true,              // Enable credentials (cookies, HTTP authentication)
+  origin: [
+    "http://localhost:5173", // Local development frontend URL
+    "https://elearnapplication.netlify.app", // Deployed frontend URL
+  ],
+  credentials: true, // Enable credentials (cookies, HTTP authentication)
 };
 
 app.use(cors(corsOptions)); // Use the updated CORS configuration
