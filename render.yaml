@@ -8,16 +8,9 @@ services:
       - key: PORT
         value: 5000
       - key: DB
-        sync: true
       - key: Activation_Secret
-        sync: true
       - key: Password
-        sync: true
       - key: Gmail
-        sync: true
       - key: Jwt_Sec
-        sync: true
       - key: Forgot_Secret
-        sync: true
       - key: frontendurl
-        sync: true
