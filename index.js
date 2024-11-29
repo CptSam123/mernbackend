@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Update the CORS options here
 const corsOptions = {
-  origin: "http://localhost:5173", // Set your frontend origin URL
+  origin:  process.env.frontendurl, // Set your frontend origin URL
   credentials: true,              // Enable credentials (cookies, HTTP authentication)
 };
 
